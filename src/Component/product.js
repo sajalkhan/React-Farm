@@ -42,7 +42,7 @@ const product = (props)=>{
         <p><span className="emoji-left"> <span role="img" aria-label=""> 🏷  </span>  </span> {data.product.price} </p>
       </div>
 
-      <Link to="#" className="product__link">
+      <Link to="" onClick={e => e.preventDefault()} className="product__link">
         <span className="emoji-left">  <span role="img" aria-label=""> 🛒 </span> </span>
         <span>Add to shopping card ({data.product.price}€)</span>
       </Link>
